@@ -1,0 +1,6 @@
+.gradle/
+build/
+node_modules/
+src/main/resources/META-INF/resources/dist
+target/
+yarn-error.log

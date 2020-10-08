@@ -1,0 +1,77 @@
+{
+	"name": "golf-react-app",
+	"version": "1.8.0",
+	"description": "GOLF React App",
+	"devDependencies": {
+		"@babel/core": "^7.1.6",
+		"@babel/plugin-proposal-class-properties": "^7.1.0",
+		"@babel/plugin-transform-runtime": "^7.4.4",
+		"@babel/preset-env": "^7.1.5",
+		"@babel/preset-react": "^7.0.0-beta.44",
+		"@material-ui/core": "^3.9.3",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^7.0.0-bridge.0",
+		"babel-loader": "^8.0.4",
+		"eslint-config-react-app": "^4.0.1",
+		"eslint-loader": "^2.1.2",
+		"eslint-plugin-flowtype": "^3.10.1",
+		"eslint-plugin-import": "^2.17.3",
+		"eslint-plugin-jsx-a11y": "^6.2.1",
+		"eslint-plugin-react": "^7.13.0",
+		"eslint-plugin-react-hooks": "^1.6.0",
+		"file-loader": "^3.0.1",
+		"html-webpack-plugin": "^3.2.0",
+		"husky": "^2.4.1",
+		"lint-staged": "^8.2.0",
+		"path": "^0.12.7",
+		"url-loader": "^0.5.9",
+		"webpack": "^4.17.2",
+		"webpack-cli": "^3.1.2",
+		"webpack-dev-server": "^3.1.7",
+		"webpack-merge": "^4.2.1"
+	},
+	"scripts": {
+		"build": "webpack --config config/prod.js",
+		"start": "webpack-dev-server --config config/dev.js --context config --hot --progress --colors",
+		"clean": "rm -rf build dist "
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.4.4",
+		"@hot-loader/react-dom": "16.8.6",
+		"acorn": "^6.1.1",
+		"axios": "^0.16.2",
+		"babel-eslint": "^10.0.1",
+		"clay-badge": "^2.14.2",
+		"clay-button": "^2.14.2",
+		"core-js": "^3.0.1",
+		"css-loader": "^2.1.1",
+		"eslint": "^5.16.0",
+		"formik": "^1.5.7",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-hot-loader": "^4.11.0",
+		"react-redux": "^7.1.0",
+		"react-router-dom": "^5.0.1",
+		"redux": "^4.0.1",
+		"redux-thunk": "^2.3.0",
+		"rgbcolor": "^1.0.1",
+		"style-loader": "^0.23.1",
+		"yandex-map-react": "^1.0.0",
+		"yup": "^0.27.0"
+	},
+	"lint-staged": {
+		"*.{js,json,css,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"browserslist": {
+		"production": [
+			"last 2 version",
+			"ie 10"
+		],
+		"development": [
+			"last 1 version"
+		]
+	}
+}

@@ -1,0 +1,5 @@
+Bundle-Name: React Portlet Web
+Bundle-SymbolicName: com.reactjs.portlet.web
+Export-Package: com.reactjs.portlet.web.constants
+Web-ContextPath: /react-portlet-web
+Import-Package: *; version="0";resolution:=optional
